@@ -35,7 +35,7 @@ int main(void)
     cin >> tests;
     for (int i = 0; i < tests; i++)
     {
-        //form connections
+        //read: form connections
         int numPlayers, comments;
         cin >> numPlayers >> comments;
         vector<pib> *players = new vector<pib>[numPlayers];

@@ -6,7 +6,6 @@ using namespace std;
 
 int main(void)
 {
-    //read
     int levels;
     cin >> levels;
     long long *colorings = new long long[levels];
