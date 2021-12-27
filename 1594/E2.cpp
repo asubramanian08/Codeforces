@@ -1,5 +1,5 @@
-//Official: incorrect
-//After looking at solution
+// Official: Unattempted
+// After looking at solution
 #include <iostream>
 #include <string>
 #include <map>
@@ -11,7 +11,7 @@ using namespace std;
 
 int main(void)
 {
-    //standard tree
+    // standard tree
     int levels;
     cin >> levels;
     long long *standard = new long long[levels];
@@ -19,7 +19,7 @@ int main(void)
     for (int i = levels - 2; i >= 0; i--)
         standard[i] = (standard[i + 1] * standard[i + 1] * 8) % MOD;
 
-    //up the tree: set up
+    // up the tree: set up
     int setNodes;
     cin >> setNodes;
     map<string, int> color;
@@ -47,7 +47,7 @@ int main(void)
         return bitNum;
     };
 
-    //build up tree
+    // build up tree
     auto orderings = [&ways, &standard, levels, &firstBit](long long node, int color)
     {
         long long left, right, level = firstBit(node);
@@ -87,7 +87,7 @@ int main(void)
             q.push(node / 2);
         }
 
-    //print and delete
+    // print and delete
     long long ans = ((ways[1][0] + ways[1][1]) % MOD + ways[1][2]) % MOD;
     cout << ans << endl;
     delete[] standard;

@@ -1,12 +1,12 @@
-//Official: incorrect
-//After looking at solution
+// Official: Unattempted
+// After looking at solution
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main(void)
 {
-    //read
+    // read
     int tests;
     cin >> tests;
     for (int i = 0; i < tests; i++)
@@ -16,7 +16,7 @@ int main(void)
         string str;
         cin >> maxOper >> target >> str;
 
-        //tests outputs
+        // tests outputs
         bool works = true;
         for (char ch : str)
             if (ch != target)
