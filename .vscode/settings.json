@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "map": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "cassert": "cpp"
     }
 }
