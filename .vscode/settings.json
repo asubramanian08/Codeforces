@@ -3,6 +3,7 @@
         "map": "cpp",
         "iostream": "cpp",
         "cassert": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "iosfwd": "cpp"
     }
 }
